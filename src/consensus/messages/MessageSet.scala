@@ -1,4 +1,4 @@
-package consensus
+package consensus.messages
 
 import consensus.processes.Process
 

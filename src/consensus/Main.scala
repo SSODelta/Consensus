@@ -1,5 +1,6 @@
 package consensus
 
+import consensus.processes.Network
 import consensus.properties.Consensus
 import consensus.protocols.NaiveProtocol
 
@@ -9,7 +10,7 @@ import consensus.protocols.NaiveProtocol
 object Main {
 
   def main(args: Array[String]): Unit = {
-    val n = new Network(10, 0, 0, new NaiveProtocol)
+    val n = new Network(10, 0, 5, new NaiveProtocol)
     var t = 0;
     while(n.live()){
       n.step

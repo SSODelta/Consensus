@@ -1,6 +1,6 @@
-package consensus
+package consensus.processes
 
-import consensus.processes.{ByzantineProcess, CrashProcess, HonestProcess, Process}
+import consensus.messages.{MessageSet, Value}
 import consensus.protocols.Protocol
 
 import scala.collection.mutable
@@ -26,7 +26,7 @@ class Network(n:Int, c:Int, t:Int, protocol:Protocol) {
     dead_processes += p
   }
 
-  def getValues():List[Value] = dead_processes.map(p => p.x).toList
+  def getValues():List[Value] = (dead_processes filterNot {_.isInstanceOf[HonestProcess]}).map(p => p.x).toList
 
   def getProcesses() = live_processes
 

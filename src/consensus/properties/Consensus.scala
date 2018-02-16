@@ -1,5 +1,6 @@
 package consensus.properties
-import consensus.Value
+
+import consensus.messages.Value
 
 /**
   * Created by nikol on 16/02/2018.

@@ -1,7 +1,7 @@
 package consensus.processes
 
 import consensus.protocols.Protocol
-import consensus.{MessageSet, Network}
+import consensus.messages.MessageSet
 
 /**
   * Created by nikol on 16/02/2018.

@@ -1,6 +1,7 @@
 package consensus.processes
 
 import consensus._
+import consensus.messages.{MessageSet, Value}
 import consensus.protocols.Protocol
 
 /**
