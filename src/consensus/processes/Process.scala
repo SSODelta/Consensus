@@ -8,7 +8,7 @@ import consensus.protocols.Protocol
   */
 abstract class Process(nw:Network) {
 
-  val x = if(Util.getRandom.nextInt(2) == 0) Values.ZERO else Values.ONE
+  var x = if(Util.getRandom.nextInt(2) == 0) Value.ZERO else Value.ONE
   val id = Util.getRandom.nextInt
   val pk = Util.getRandom.nextInt
 

@@ -3,7 +3,7 @@ package consensus;
 /**
  * Created by nikol on 16/02/2018.
  */
-public enum Values {
+public enum Value {
     ZERO,
     ONE,
     ERROR
