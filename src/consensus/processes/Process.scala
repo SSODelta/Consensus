@@ -12,6 +12,6 @@ abstract class Process(nw:Network) {
   val id = Util.getRandom.nextInt
   val pk = Util.getRandom.nextInt
 
-  def execute(p: Protocol, ms:MessageSet)
+  def execute(p: Protocol, ms:MessageSet) : MessageSet
 
 }
